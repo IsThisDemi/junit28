@@ -1,3 +1,4 @@
+//prova
 package com.in28minutes.junit.model;
 
 public enum Currency {

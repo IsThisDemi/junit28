@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\business\ClientBO.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\business\ClientBOImpl.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\business\exception\DifferentCurrenciesException.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\helper\StringHelper.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\Amount.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\AmountImpl.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\Client.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\ClientImpl.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\ClientType.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\Collateral.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\CollateralImpl.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\CollateralType.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\Currency.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\Product.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\ProductImpl.java">
+<error line="2" severity="error" message="Line does not match expected header line of &apos;^$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="C:\Users\Utente\Desktop\Coding\JUnitIn28Minutes\src\main\java\com\in28minutes\junit\model\ProductType.java">
+<error line="1" severity="error" message="Missing a header - not enough lines in file." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+</checkstyle>

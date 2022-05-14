@@ -1,3 +1,4 @@
+//prova
 # JUnitIn28Minutes
 
 Git hub repository for the free Udemy course : 
@@ -6,19 +7,20 @@ Git hub repository for the free Udemy course :
 
 ## Get started with Junit
 
-* [Course Overview](#topics)
-  - [Section 1 Foundation](#section-1-foundation)
-  - [Section 2 First JUnit Example](#section-2-first-junit-example)
-  - [Section 3 Second JUnit Example](#section-3-second-junit-example)
-  - [Section 4 JUnit Simple Test Scenarios](#section-4-junit-simple-test-scenarios)
-  - [Section 5 JUnit Intermediate Test Scenarios](#section-5-junit-intermediate-test-scenarios)
-  - [Section 6 JUnit Best Practices](#section-6-junit-best-practices)
-  - [Starting Examples](#starting-examples)
-* [About in28Minutes](#about-in28minutes)
-  - [Our Beliefs](#our-beliefs)
-  - [Our Approach](#our-approach)
-  - [Find Us](#useful-links)
-  - [Other Courses](#other-courses)
+- [JUnitIn28Minutes](#junitin28minutes)
+	- [Get started with Junit](#get-started-with-junit)
+	- [Topics](#topics)
+		- [Section 1 Foundation](#section-1-foundation)
+		- [Section 2 First JUnit Example](#section-2-first-junit-example)
+		- [Section 3 Second JUnit Example](#section-3-second-junit-example)
+		- [Section 4 JUnit Simple Test Scenarios](#section-4-junit-simple-test-scenarios)
+		- [Section 5 JUnit Intermediate Test Scenarios](#section-5-junit-intermediate-test-scenarios)
+		- [Section 6 JUnit Best Practices](#section-6-junit-best-practices)
+		- [Starting Examples](#starting-examples)
+	- [About in28Minutes](#about-in28minutes)
+		- [Our Beliefs](#our-beliefs)
+		- [Our Approach](#our-approach)
+	- [About in28Minutes](#about-in28minutes-1)
 
 ## Topics
 ### Section 1 Foundation
