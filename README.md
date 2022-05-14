@@ -1,4 +1,7 @@
 //prova
+![example workflow](https://github.com/IsThisDemi/junit28/actions/workflows/main.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/IsThisDemi/junit28/badge.svg?branch=master)](https://coveralls.io/github/IsThisDemi/junit28?branch=master)
+
 # JUnitIn28Minutes
 
 Git hub repository for the free Udemy course : 
