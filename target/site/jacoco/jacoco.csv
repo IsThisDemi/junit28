@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+maven-example-1,com.in28minutes.junit.helper,StringHelper,9,52,3,3,3,10,3,3,0,3
+maven-example-1,com.in28minutes.junit.business,ClientBOImpl,0,88,0,10,0,21,0,9,0,4
+maven-example-1,com.in28minutes.junit.business.exception,DifferentCurrenciesException,0,3,0,0,0,1,0,1,0,1
+maven-example-1,com.in28minutes.junit.model,CollateralImpl,33,0,0,0,14,0,7,0,7,0
+maven-example-1,com.in28minutes.junit.model,Currency,3,45,0,0,1,5,1,2,1,2
+maven-example-1,com.in28minutes.junit.model,CollateralType,75,0,0,0,7,0,3,0,3,0
+maven-example-1,com.in28minutes.junit.model,ClientType,55,0,0,0,12,0,3,0,3,0
+maven-example-1,com.in28minutes.junit.model,AmountImpl,8,15,0,0,4,6,2,3,2,3
+maven-example-1,com.in28minutes.junit.model,ProductImpl,25,18,0,0,11,7,7,2,7,2
+maven-example-1,com.in28minutes.junit.model,ProductType,3,45,0,0,1,5,1,2,1,2
+maven-example-1,com.in28minutes.junit.model,ClientImpl,60,0,0,0,25,0,13,0,13,0

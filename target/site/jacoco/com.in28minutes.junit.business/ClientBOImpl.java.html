@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ClientBOImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maven-example-1</a> &gt; <a href="index.source.html" class="el_package">com.in28minutes.junit.business</a> &gt; <span class="el_source">ClientBOImpl.java</span></div><h1>ClientBOImpl.java</h1><pre class="source lang-java linenums">package com.in28minutes.junit.business;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import com.in28minutes.junit.business.exception.DifferentCurrenciesException;
+import com.in28minutes.junit.model.Amount;
+import com.in28minutes.junit.model.AmountImpl;
+import com.in28minutes.junit.model.Currency;
+import com.in28minutes.junit.model.Product;
+
+<span class="fc" id="L12">public class ClientBOImpl implements ClientBO {</span>
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.clarity.model.ClientBO#getClientProductsSum(java.util.List)
+	 */
+	@Override
+	public Amount getClientProductsSum(List&lt;Product&gt; products)
+			throws DifferentCurrenciesException {
+
+<span class="fc bfc" id="L23" title="All 2 branches covered.">		if (products.size() == 0)</span>
+<span class="fc" id="L24">			return new AmountImpl(BigDecimal.ZERO, Currency.EURO);</span>
+
+<span class="fc bfc" id="L26" title="All 2 branches covered.">		if (!isCurrencySameForAllProducts(products)) {</span>
+<span class="fc" id="L27">			throw new DifferentCurrenciesException();</span>
+		}
+
+<span class="fc" id="L30">		BigDecimal productSum = calculateProductSum(products);</span>
+
+<span class="fc" id="L32">		Currency firstProductCurrency = products.get(0).getAmount()</span>
+<span class="fc" id="L33">				.getCurrency();</span>
+
+<span class="fc" id="L35">		return new AmountImpl(productSum, firstProductCurrency);</span>
+	}
+
+	private BigDecimal calculateProductSum(List&lt;Product&gt; products) {
+<span class="fc" id="L39">		BigDecimal sum = BigDecimal.ZERO;</span>
+		// Calculate Sum of Products
+<span class="fc bfc" id="L41" title="All 2 branches covered.">		for (Product product : products) {</span>
+<span class="fc" id="L42">			sum = sum.add(product.getAmount().getValue());</span>
+		}
+<span class="fc" id="L44">		return sum;</span>
+	}
+
+	private boolean isCurrencySameForAllProducts(List&lt;Product&gt; products)
+			throws DifferentCurrenciesException {
+
+<span class="fc" id="L50">		Currency firstProductCurrency = products.get(0).getAmount()</span>
+<span class="fc" id="L51">				.getCurrency();</span>
+
+<span class="fc bfc" id="L53" title="All 2 branches covered.">		for (Product product : products) {</span>
+<span class="fc" id="L54">			boolean currencySameAsFirstProduct = product.getAmount()</span>
+<span class="fc" id="L55">					.getCurrency().equals(firstProductCurrency);</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">			if (!currencySameAsFirstProduct) {</span>
+<span class="fc" id="L57">				return false;</span>
+			}
+		}
+
+<span class="fc" id="L61">		return true;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

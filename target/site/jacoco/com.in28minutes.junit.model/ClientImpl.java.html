@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ClientImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maven-example-1</a> &gt; <a href="index.source.html" class="el_package">com.in28minutes.junit.model</a> &gt; <span class="el_source">ClientImpl.java</span></div><h1>ClientImpl.java</h1><pre class="source lang-java linenums">package com.in28minutes.junit.model;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+/**
+ * Client Model API.
+ */
+public class ClientImpl implements Client {
+
+	private long id;
+
+	private String name;
+
+	private ClientType type;
+
+	private List&lt;Collateral&gt; collaterals;
+
+	private List&lt;Product&gt; products;
+
+	private BigDecimal productAmount;
+
+	public ClientImpl(long id, String name, ClientType type,
+			List&lt;Collateral&gt; collaterals, List&lt;Product&gt; products) {
+<span class="nc" id="L25">		super();</span>
+<span class="nc" id="L26">		this.id = id;</span>
+<span class="nc" id="L27">		this.name = name;</span>
+<span class="nc" id="L28">		this.type = type;</span>
+<span class="nc" id="L29">		this.collaterals = collaterals;</span>
+<span class="nc" id="L30">		this.products = products;</span>
+<span class="nc" id="L31">	}</span>
+
+	public long getId() {
+<span class="nc" id="L34">		return id;</span>
+	}
+
+	public void setId(long id) {
+<span class="nc" id="L38">		this.id = id;</span>
+<span class="nc" id="L39">	}</span>
+
+	@Override
+	public String getName() {
+<span class="nc" id="L43">		return name;</span>
+	}
+
+	public void setName(String name) {
+<span class="nc" id="L47">		this.name = name;</span>
+<span class="nc" id="L48">	}</span>
+
+	@Override
+	public ClientType getType() {
+<span class="nc" id="L52">		return type;</span>
+	}
+
+	public void setType(ClientType type) {
+<span class="nc" id="L56">		this.type = type;</span>
+<span class="nc" id="L57">	}</span>
+
+	@Override
+	public List&lt;Collateral&gt; getCollaterals() {
+<span class="nc" id="L61">		return collaterals;</span>
+	}
+
+	public void setCollaterals(List&lt;Collateral&gt; collaterals) {
+<span class="nc" id="L65">		this.collaterals = collaterals;</span>
+<span class="nc" id="L66">	}</span>
+
+	@Override
+	public List&lt;Product&gt; getProducts() {
+<span class="nc" id="L70">		return products;</span>
+	}
+
+	public void setProducts(List&lt;Product&gt; products) {
+<span class="nc" id="L74">		this.products = products;</span>
+<span class="nc" id="L75">	}</span>
+
+	@Override
+	public BigDecimal getProductAmount() {
+<span class="nc" id="L79">		return productAmount;</span>
+	}
+
+	@Override
+	public void setProductAmount(BigDecimal productAmount) {
+<span class="nc" id="L84">		this.productAmount = productAmount;</span>
+<span class="nc" id="L85">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StringHelper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maven-example-1</a> &gt; <a href="index.source.html" class="el_package">com.in28minutes.junit.helper</a> &gt; <span class="el_source">StringHelper.java</span></div><h1>StringHelper.java</h1><pre class="source lang-java linenums">package com.in28minutes.junit.helper;
+
+<span class="fc" id="L3">public class StringHelper {</span>
+
+	public String truncateAInFirst2Positions(String str) {
+<span class="pc bpc" id="L6" title="1 of 2 branches missed.">		if (str.length() &lt;= 2)</span>
+<span class="nc" id="L7">			return str.replaceAll(&quot;A&quot;, &quot;&quot;);</span>
+
+<span class="fc" id="L9">		String first2Chars = str.substring(0, 2);</span>
+<span class="fc" id="L10">		String stringMinusFirst2Chars = str.substring(2);</span>
+
+<span class="fc" id="L12">		return first2Chars.replaceAll(&quot;A&quot;, &quot;&quot;) + stringMinusFirst2Chars;</span>
+	}
+	
+	public boolean areFirstAndLastTwoCharactersTheSame(String str) {
+
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">		if (str.length() &lt;= 1)</span>
+<span class="nc" id="L18">			return false;</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">		if (str.length() == 2)</span>
+<span class="nc" id="L20">			return true;</span>
+
+<span class="fc" id="L22">		String first2Chars = str.substring(0, 2);</span>
+
+<span class="fc" id="L24">		String last2Chars = str.substring(str.length() - 2);</span>
+
+<span class="fc" id="L26">		return first2Chars.equals(last2Chars);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
